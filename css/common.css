@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+.categories-css {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.categories-css .item {
+  border-radius: 8px;
+  background: #f6f6fe;
+  padding: 0 16px;
+  width: 392px;
+}
+
+.categories-css h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 16px 0;
+}
+
+.categories-css > li > ul {
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+}
+
+.categories-css > li > ul > li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  padding: 8px 16px;
+}
+
+.gallery-css {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  padding: 100px 0;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.gallery-css li {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
