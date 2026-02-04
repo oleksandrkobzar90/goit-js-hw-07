@@ -27,8 +27,6 @@ const images = [
 
 const galleryList = document.querySelector('.gallery');
 
-galleryList.classList.add('gallery-css');
-
 const items = images.map(({ url, alt }) => {
   const li = document.createElement('li');
   const img = document.createElement('img');

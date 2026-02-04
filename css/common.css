@@ -14,22 +14,25 @@ body {
   line-height: 1.5;
 }
 
-.categories-css {
+/*#region task-1.js*/
+
+#categories {
   display: flex;
   gap: 24px;
   list-style: none;
   flex-direction: column;
-  margin: 0 auto;
+  padding: 24px 0;
+  margin: 0 24px;
 }
 
-.categories-css .item {
+#categories .item {
   border-radius: 8px;
   background: #f6f6fe;
   padding: 0 16px;
   width: 392px;
 }
 
-.categories-css h2 {
+#categories h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -39,7 +42,7 @@ body {
   margin: 16px 0;
 }
 
-.categories-css > li > ul {
+#categories > li > ul {
   list-style: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -53,29 +56,171 @@ body {
   padding: 0;
 }
 
-.categories-css > li > ul > li {
+#categories > li > ul > li {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
   padding: 8px 16px;
 }
 
-.gallery-css {
+/*#endregion task-1.js*/
+
+/*#region task-2.js*/
+
+.gallery {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
   padding: 100px 0;
-  margin: 0 auto;
+  margin: 0 156px;
   list-style-type: none;
 }
 
-.gallery-css li {
+.gallery li {
   width: calc((100% - 2 * 24px) / 3);
 }
 
 .gallery img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   display: block;
 }
+
+/*#endregion task-2.js*/
+
+/*#region task-3.js*/
+#name-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  padding: 8px 16px;
+  margin-left: 24px;
+}
+
+#name-input:focus,
+#name-input:hover {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+#name-input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#name-input ~ h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-left: 24px;
+}
+
+/*#endregion task-3.js*/
+
+/*#region task-4.js*/
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  margin: 0 24px;
+  gap: 8px;
+}
+
+.login-form input[name='email'],
+.login-form input[name='password'] {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.login-form input[name='email']:focus,
+.login-form input[name='email']:hover,
+.login-form input[name='password']:focus,
+.login-form input[name='password']:hover {
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.login-form button {
+  margin-top: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form label input {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.login-form button:focus,
+.login-form button:hover {
+  background: #6c8cff;
+}
+
+/*#endregion task-4.js*/
+
+/*#region task-5.js*/
+
+.widget {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 100px 0;
+}
+
+.widget p {
+  margin-top: 0;
+}
+
+.widget button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  background: #4e75ff;
+  border: none;
+  cursor: pointer;
+}
+
+.widget button:focus,
+.widget button:hover {
+  background: #6c8cff;
+}
+
+/*#endregion task-5.js*/

@@ -1,7 +1,6 @@
 'use strict';
 const categories = document.querySelector('#categories');
 const categoriesList = document.querySelectorAll('.item');
-categories.classList.add('categories-css');
 
 console.log(`Number of categories: ${categoriesList.length}`);
 
