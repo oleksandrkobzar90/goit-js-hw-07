@@ -1,0 +1,59 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  margin: 0 24px;
+  gap: 8px;
+}
+
+.login-form input[name='email'],
+.login-form input[name='password'] {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.login-form input[name='email']:focus,
+.login-form input[name='email']:hover,
+.login-form input[name='password']:focus,
+.login-form input[name='password']:hover {
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.login-form button {
+  margin-top: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form label input {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.login-form button:focus,
+.login-form button:hover {
+  background: #6c8cff;
+}
