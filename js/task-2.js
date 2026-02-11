@@ -25,14 +25,23 @@ const images = [
   },
 ];
 
+function itemTemplate(item) {
+  return `      <li>
+        <img
+          src= ${item.url}
+          alt=${item.alt}
+        />
+      </li>`;
+}
+
 const galleryList = document.querySelector('.gallery');
 
 const items = images.map(({ url, alt }) => {
   const li = document.createElement('li');
   const img = document.createElement('img');
 
-  img.src = url;
-  img.alt = alt;
+  img.setAttribute('src', url);
+  img.setAttribute('alt', alt);
 
   li.append(img);
   return li;

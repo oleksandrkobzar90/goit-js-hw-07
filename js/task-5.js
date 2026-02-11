@@ -3,8 +3,6 @@ const widget = document.querySelector('.widget');
 const colorText = widget.querySelector('.color');
 const changeColorBtn = document.querySelector('.change-color');
 
-// title.textContent = 'Blablabla';
-
 changeColorBtn.addEventListener('click', () => {
   const changedColor = getRandomHexColor();
   document.body.style.backgroundColor = changedColor;
